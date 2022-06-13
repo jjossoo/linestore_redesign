@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linefriends_character
+    </title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        body {
+            width: 1440px;
+            height: 2000px;
+        }
+
+        .nav {
+            width: 100%;
+            height: 102px;
+            background-color: rgba(255, 255, 255, 0.413);
+            position: sticky;
+            padding-top: 32px;
+            top: -32px;
+            z-index: 1;
+
+        }
+
+        .nav img {
+            height: 30px;
+            margin: 17px 0px 0px 95px;
+            display: inline-block;
+        }
+
+        .nav ul {
+            float: right;
+            list-style: none;
+            margin-right: 100px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #171717;
+            font-weight: 700;
+        }
+
+        .nav a:hover {
+            color: #63b457;
+            /* background-color: #171717; */
+        }
+
+        .nav li {
+            list-style: none;
+            float: left;
+            padding: 13px 0px 16px;
+            margin: 12px;
+        }
+
+        .header {
+            width: 100%;
+            height: 604px;
+            margin-bottom: 64px;
+            background-image: url("https://i.postimg.cc/pTGBzZvR/banner2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+
+        .footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 80px;
+            margin-bottom: 80px;
+            background-color: black;
+            height: 200px;
+        }
+
+        .footer a {
+            margin-left: 10px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+        p {
+            margin: 1.5em 0;
+            line-height: 200%;
+        }
+
+        section.hero h2,
+        section.hero p {
+            max-width: 450px;
+
+        }
+
+        section.content {
+
+            margin: 48px;
+            display: flex;
+
+            flex-direction: row;
+        }
+
+        section.content div.image img {
+            width: 100%;
+        }
+
+        section.content div.info {
+            flex: 0 0 400px;
+            margin-left: 48px;
+        }
+
+        h3 {
+            font-size: 32px;
+            line-height: 1.25;
+            font-weight: 500;
+        }
+
+        section.content:nth-child(2n) {
+            flex-direction: row-reverse;
+        }
+
+        section.content:nth-child(2n) div.info {
+            margin: 0 48px 0 0;
+
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="nav">
+        <a href="index.html">
+            <img src="logo.png"></a>
+        <ul>
+            <li><a href="main3.html">NEW</a></li>
+            <li><a href="#">SALE</a></li>
+            <li><a href="#">콜라보</a></li>
+            <li><a href="main4.html">캐릭터</a></li>
+            <li><a href="#">토이</a></li>
+            <li><a href="#">문구</a></li>
+            <li><a href="#">디지털</a></li>
+            <li><a href="#">패션잡화</a></li>
+        </ul>
+    </div>
+
+    <div class="header"></div>
+
+    <section class="content">
+        <div class="image">
+            <img src="https://www.linefriends.com/img/img_ip_thumb1_v2.jpg">
+        </div>
+        <div class="info">
+            <h3>BROWN & FRIENDS</h3>
+            <p>전 세계 2억 명이 사용하는 모바일 메신저 ‘라인’의 스티커 캐릭터로 탄생한
+                ‘BROWN & FRIENDS’는 이제 모바일을 넘어 글로벌 캐릭터 브랜드가 되었습니다.
+                브랜드의 가치와 결을 함께하는 글로벌 파트너사와의 다양한 콜라보레이션을 통해
+                제품, 애니메이션, 게임, 카페, 호텔 등 다양한 영역에서 전세계 MZ팬들을 만나고 있습니다.</p>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="image">
+            <img src="https://www.linefriends.com/img/img_ip_thumb2_v2.jpg">
+        </div>
+        <div class="info">
+            <h3>BT21</h3>
+            <p>BT21은 글로벌 인기 아티스트 BTS와 라인프렌즈가 만든 캐릭터IP로
+                ‘FRIENDS CREATORS’ 프로젝트를 통해 탄생했습니다. BTS멤버들이 제작과정에
+                직접 참여하여 각자의 개성과 감성을 담은 총 8종의 캐릭터를 만들었고,
+                출시와 함께 전세계 밀레니얼들의 폭발적인 공감을 이끌어내며 큰 사랑을 받고있습니다</p>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="image">
+            <img src="https://www.linefriends.com/img/img_ip_thumb3_v2.jpg">
+        </div>
+        <div class="info">
+            <h3>ROY6</h3>
+            <p>ROY6는 중국의 차세대 아이돌 왕위엔 (Roy Wang) 과 함께 만든 캐릭터 IP 입니다.
+                라인프렌즈의 전문성과 아티스트의 창의성을 결합하여 새로운 IP를 만드는
+                ‘FRIENDS CREATORS’ 프로젝트의 취지에 맞춰, 왕위엔의 긍정적인 기운과
+                라인프렌즈의 디자인 역량이 가미된 6종의 캐릭터가 탄생했습니다.</p>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="image">
+            <img src="https://www.linefriends.com/img/img_ip_thumb4_v2.jpg">
+        </div>
+        <div class="info">
+            <h3>Brawl Stars</h3>
+            <p>출시 반년 만에 글로벌 1억 다운로드를 돌파한 Supercell의 모바일 게임, Brawl Stars가
+                라인프렌즈의 캐릭터 비즈니스 노하우와 크리에이티브 역량을 만나 다양한 제품과 콘텐츠로
+                재탄생했습니다. 라인프렌즈는 Brawl Stars 게임 IP의 글로벌 공식 라이센시로서
+                중국, 유럽, 북미 등 더 많은 글로벌 팬들을 찾아갑니다.
+
+            </p>
+        </div>
+    </section>
+
+    <div class="footer">
+        <a href="https://www.naver.com/">
+            <img src="footer_logo.svg" height="20">
+        </a>
+        <a href="http://facebook.com">
+            <img src="https://bakey.codeit.kr/files/629/images/facebook.png" height="20">
+        </a>
+        <a href="http://instagram.com">
+            <img src="https://bakey.codeit.kr/files/629/images/instagram.png" height="20">
+        </a>
+        <a href="http://twitter.com">
+            <img src="https://bakey.codeit.kr/files/629/images/twitter.png" height="20">
+        </a>
+
+    </div>
+
+
+
+
+    <script>
+        const headerTag = document.querySelector("header")
+
+        const animatedTags = document.querySelectorAll("h2, h3, p, section img, a.button")
+
+        document.addEventListener("scroll", function () {
+            const pixels = window.scrollY
+
+            if (pixels >= headerTag.getBoundingClientRect().height) {
+
+                headerTag.classList.add("scrolled")
+            } else {
+                headerTag.classList.remove("scrolled")
+            }
+        })
+
+        animatedTags.forEach(tag => {
+            tag.style.opacity = 0
+        })
+
+        const fadeIn = function () {
+            let delay = 0.25
+            animatedTags.forEach(tag => {
+                const tagTop = tag.getBoundingClientRect().top;
+                const tagBottom = tag.getBoundingClientRect().bottom;
+
+                if (tagTop < window.innerHeight && tagBottom > 0) {
+
+                    tag.style.animation = `fadein 2s ${delay}s both`
+                    delay = delay + 0.25
+
+                } else {
+                    tag.style.opacity = 0
+                    tag.style.animation = ""
+                }
+
+            })
+
+        }
+
+        fadeIn()
+        document.addEventListener("scroll", function () {
+            fadeIn()
+        })
+        window.addEventListener("resize", function () {
+            fadeIn()
+        })
+    </script>
+
+
+
+</body>
+
+</html>

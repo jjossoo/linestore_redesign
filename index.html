@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linefriends_store</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        body {
+            width: 1440px;
+            height: 2890px;
+        }
+
+        .nav {
+            width: 100%;
+            height: 102px;
+            background-color: rgba(255, 255, 255, 0.413);
+            position: sticky;
+            padding-top: 32px;
+            top: -32px;
+        }
+
+        .nav img {
+            height: 30px;
+            margin: 17px 0px 0px 95px;
+            display: inline-block;
+        }
+
+        .nav ul {
+            float: right;
+            list-style: none;
+            margin-right: 100px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #171717;
+            font-weight: 700;
+        }
+
+        .nav a:hover {
+            color: #63b457;
+            /* background-color: #171717; */
+        }
+
+        .nav li {
+            list-style: none;
+            float: left;
+            padding: 13px 0px 16px;
+            margin: 12px;
+        }
+
+
+        .header {
+            width: 100%;
+            height: 604px;
+            margin-bottom: 64px;
+        }
+
+        .header p {
+            top: 600px;
+            position: absolute;
+            display: flex;
+            left: 100px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff00;
+        }
+
+        .header img {
+            width: 100%;
+            height: 604px;
+            object-fit: cover;
+        }
+
+        .arrows {
+            width: 1400px;
+            position: absolute;
+            top: 400px;
+            left: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .pop-list {
+            width: 100%;
+            height: 604px;
+            background-color: #FAF8F5;
+            margin-bottom: 64px;
+        }
+
+        .pop-list-name {
+            padding-top: 32px;
+            padding-left: 240px;
+            padding-bottom: 64px;
+        }
+
+        .pop-list-name h1 {
+            padding-top: 8px;
+            font-size: 28px;
+            color: #363E4A;
+        }
+
+        .pop-list-name h2 {
+            font-size: 14px;
+            color: #64B457;
+        }
+
+        .product {
+            display: block;
+            float: left;
+            padding: 36px 24px 24px;
+            text-decoration: none;
+            color: #363E4A;
+            width: 304px;
+            height: 356px;
+            margin-left: 208px;
+            margin-right: 56px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+        }
+
+        .product2 {
+            display: block;
+            float: left;
+            padding: 36px 24px 24px;
+            text-decoration: none;
+            color: #363E4A;
+            width: 304px;
+            height: 356px;
+            margin-right: 56px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+        }
+
+        .product3 {
+            display: block;
+            float: left;
+            padding: 36px 24px 24px;
+            text-decoration: none;
+            color: #363E4A;
+            width: 304px;
+            height: 356px;
+            margin-right: 208px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+        }
+
+        .product img,
+        .product2 img,
+        .product3 img {
+            width: 256px;
+            height: 236px;
+            object-fit: cover;
+        }
+
+        .product-name {
+            margin-top: 14px;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        .product-price {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .header2 {
+            width: 100%;
+            height: 291px;
+            /* margin-bottom: 64px; */
+            background-color: #64B457;
+            padding-top: 32px;
+
+        }
+
+        .header2 h3 {
+            font-size: 28px;
+            font-weight: 800;
+            color: white;
+            margin-right: 125px;
+            margin-left: 939px;
+            margin-bottom: 32px;
+        }
+
+        .product4 {
+            width: 196px;
+            height: 248px;
+            display: block;
+            color: #545454;
+            text-decoration: none;
+            float: left;
+            margin-left: 623px;
+            margin-right: 20px;
+            padding: 20px 24px 32px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+        }
+
+        .product5 {
+            width: 196px;
+            height: 248px;
+            display: block;
+            color: #545454;
+            text-decoration: none;
+            float: left;
+            margin-right: 20px;
+            padding: 20px 24px 32px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+        }
+
+        .product6 {
+            width: 196px;
+            height: 248px;
+            display: block;
+            color: #545454;
+            text-decoration: none;
+            float: left;
+            margin-right: 20px;
+            padding: 20px 24px 32px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+        }
+
+        .product4 img,
+        .product5 img,
+        .product6 img {
+            width: 148px;
+            height: 130px;
+            object-fit: cover;
+        }
+
+        .product-name2 {
+            margin-top: 24px;
+            margin-bottom: 12px;
+            font-size: 12px;
+        }
+
+        .product-price2 {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .banner {
+            margin-top: 177px;
+            margin-bottom: 80px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .banner img {
+            width: 1064px;
+            height: 98px;
+        }
+
+        .header3 {
+            width: 100%;
+            height: 548px;
+            /* margin-bottom: 64px; */
+            background-color: #FAF8F5;
+        }
+
+        .product7 {
+            width: 225px;
+            height: 300px;
+            display: block;
+            color: #545454;
+            text-decoration: none;
+            float: left;
+            margin-left: 240px;
+            margin-right: 20px;
+            padding: 16px 16px 16px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+        }
+
+        .product8 {
+            width: 225px;
+            height: 300px;
+            display: block;
+            color: #545454;
+            text-decoration: none;
+            float: left;
+            margin-right: 20px;
+            padding: 16px 16px 16px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+        }
+
+        .product9 {
+            width: 225px;
+            height: 300px;
+            display: block;
+            color: #545454;
+            text-decoration: none;
+            float: left;
+            margin-right: 20px;
+            padding: 16px 16px 16px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+        }
+
+        .product10 {
+            width: 225px;
+            height: 300px;
+            display: block;
+
+            color: #545454;
+            text-decoration: none;
+            float: left;
+            margin-right: 240px;
+            padding: 16px 16px 16px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+        }
+
+        .product7 img,
+        .product8 img,
+        .product9 img,
+        .product10 img {
+            width: 193px;
+            height: 168px;
+            object-fit: cover;
+        }
+
+        .product-name3 {
+            margin-top: 24px;
+            margin-bottom: 14px;
+            font-size: 14px;
+        }
+
+        .product-price3 {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 80px;
+            margin-bottom: 80px;
+            background-color: black;
+            height: 200px;
+        }
+
+        .footer a {
+            margin-left: 10px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+        #live-chat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+
+            border: none;
+            border-radius: 16px;
+            background: #63b457;
+            color: white;
+            padding: 12px;
+            font-weight: bold;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="live-chat">QUESTION 💬 </button>
+    <div class="nav">
+        <a href="index.html">
+            <img src="logo.png"></a>
+        <ul>
+            <li><a href="main3.html">NEW</a></li>
+            <li><a href="#">SALE</a></li>
+            <li><a href="#">콜라보</a></li>
+            <li><a href="main4.html">캐릭터</a></li>
+            <li><a href="#">토이</a></li>
+            <li><a href="#">문구</a></li>
+            <li><a href="#">디지털</a></li>
+            <li><a href="#">패션잡화</a></li>
+        </ul>
+    </div>
+    <div class="header">
+        <img src=header1.jpg>
+        <p>1</p>
+    </div>
+    <div class="arrows">
+        <img class="arrow-left" src="left.svg" alt="left">
+        <img class="arrow-right" src="right.svg" alt="right arrow">
+    </div>
+    </div>
+    <div class="pop-list">
+        <div class="pop-list-name">
+            <h2>조회수 급상승</h2>
+            <h1>지금 인기 있는 상품은?</h1>
+        </div>
+        <a href="#" class="product">
+            <img src="https://shop-phinf.pstatic.net/20220609_190/1654743281256OAESV_JPEG/55879176227858388_331820481.jpg?type=m510
+            ">
+            <div class="product-name">라인프렌즈 레니니 스트레스볼</div>
+            <div class="product-price">13,000 won</div>
+        </a>
+        <a href="#" class="product2">
+            <img src="https://shop-phinf.pstatic.net/20191224_115/1577153655754lNyxp_JPEG/14513490299555450_473283608.jpg?type=m510
+            ">
+            <div class="product-name">라인프렌즈 샐리 머그 컵커버 세트</div>
+            <div class="product-price">20,000 won</div>
+        </a>
+        <a href="#" class="product3">
+            <img src="https://shop-phinf.pstatic.net/20200709_108/1594282111967KeEpJ_JPEG/17387331_47767921.jpg?type=m510
+            ">
+            <div class="product-name">BT21 시티에디션 서울 에코백</div>
+            <div class="product-price">18,000 won</div>
+        </a>
+
+    </div>
+    <div class="header2">
+        <h3>주목할만한 소식.<br>새로나왔어요.</h3>
+
+        <a href="#" class="product4">
+            <img src="https://shop-phinf.pstatic.net/20220526_132/1653551921064dsqY5_JPEG/21381382_74866347.jpg?type=m510
+            ">
+            <div class="product-name2">라인프렌즈 코니니 얼굴 쿠션</div>
+            <div class="product-price2">38,000 won</div>
+        </a>
+        <a href="#" class="product5">
+            <img src="https://shop-phinf.pstatic.net/20220531_292/1653957567113stDr1_JPEG/21400030_74951459.jpg?type=m510
+            ">
+            <div class="product-name2">BT21 미니니 랩탑 파우치</div>
+            <div class="product-price2">45,000 won</div>
+        </a>
+        <a href="#" class="product6">
+            <img src="https://shop-phinf.pstatic.net/20220609_74/1654743346786VqtfU_JPEG/55879236163802164_2123790626.jpg?type=m510
+            ">
+            <div class="product-name2">라인프렌즈 코니니 트레스볼</div>
+            <div class="product-price2">13,000 won</div>
+        </a>
+    </div>
+    <div class="banner">
+        <img src="banner.svg">
+    </div>
+    <div class="header3">
+        <div class="pop-list-name">
+            <h2>내 마음이야</h2>
+            <h1>선물하기 좋은 상품</h1>
+        </div>
+        <a href="#" class="product7">
+            <img src="https://shop-phinf.pstatic.net/20220502_175/1651455394503apOVF_JPEG/21268158_73960679.jpg?type=m510
+            ">
+            <div class="product-name3">BT21 COOKY 턴테이블 블루투스 스피커</div>
+            <div class="product-price3">58,900 won</div>
+        </a>
+        <a href="#" class="product8">
+            <img src="https://shop-phinf.pstatic.net/20220530_79/1653873784503z1oGL_JPEG/21394622_74911943.jpg?type=m510
+            ">
+            <div class="product-name3">BT21 COOKY 피규어 개인정보 지우개 롤러 스탬프</div>
+            <div class="product-price3">1,000 won</div>
+        </a>
+        <a href="#" class="product9">
+            <img src="https://shop-phinf.pstatic.net/20200709_216/1594282114660yvWid_JPEG/17420062_47767496.jpg?type=m510
+            ">
+            <div class="product-name3">BT21 시티에디션 서울 키링</div>
+            <div class="product-price3">11,000 won</div>
+        </a>
+        <a href="#" class="product10">
+            <img src="https://shop-phinf.pstatic.net/20220422_247/1650607970346Riq1H_JPEG/21216402_73684303.jpg?type=m510
+            ">
+            <div class="product-name3">라인프렌즈 레니니 마우스 패드</div>
+            <div class="product-price3">4,000 won</div>
+        </a>
+    </div>
+    </div>
+
+    <div class="footer">
+        <a href="https://www.naver.com/">
+            <img src="footer_logo.svg" height="20">
+        </a>
+        <a href="http://facebook.com">
+            <img src="https://bakey.codeit.kr/files/629/images/facebook.png" height="20">
+        </a>
+        <a href="http://instagram.com">
+            <img src="https://bakey.codeit.kr/files/629/images/instagram.png" height="20">
+        </a>
+        <a href="http://twitter.com">
+            <img src="https://bakey.codeit.kr/files/629/images/twitter.png" height="20">
+        </a>
+
+    </div>
+    <script>
+        const numberTag = document.querySelector("div.header p")
+        const headerImg = document.querySelector("div.header img")
+        const leftButton = document.querySelector("img.arrow-left")
+        const rightButton = document.querySelector("img.arrow-right")
+
+        let currentNumber = 1;
+
+        leftButton.addEventListener("click", function () {
+            console.log(currentNumber);
+
+            currentNumber--;
+            if (currentNumber < 1) {
+                currentNumber = 4;
+            }
+
+            numberTag.innerHTML = currentNumber;
+            // productImg.src = "product"+currentNumber+".jpg";
+            headerImg.src = `header${currentNumber}.jpg`;
+        })
+
+        rightButton.addEventListener("click", function () {
+            console.log(currentNumber);
+
+            currentNumber++;
+            if (currentNumber > 4) {
+                currentNumber = 1;
+            }
+
+            numberTag.innerHTML = currentNumber;
+            // productImg.src = "product"+currentNumber+".jpg";
+            headerImg.src = `header${currentNumber}.jpg`;
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>

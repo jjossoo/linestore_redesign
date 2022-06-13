@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linefriends_new</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        body {
+            width: 1440px;
+            height: 2000px;
+        }
+
+        .nav {
+            width: 100%;
+            height: 102px;
+            background-color: rgba(255, 255, 255, 0.413);
+            position: sticky;
+            padding-top: 32px;
+            top: -32px;
+        }
+
+        .nav img {
+            height: 30px;
+            margin: 17px 0px 0px 95px;
+            display: inline-block;
+        }
+
+        .nav ul {
+            float: right;
+            list-style: none;
+            margin-right: 100px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #171717;
+            font-weight: 700;
+        }
+
+        .nav a:hover {
+            color: #63b457;
+
+        }
+
+        .nav li {
+            list-style: none;
+            float: left;
+            padding: 13px 0px 16px;
+            margin: 12px;
+        }
+
+        .header {
+            width: 100%;
+            height: 604px;
+            margin-bottom: 64px;
+            background-image: url("https://i.postimg.cc/kgwx3GtH/banner1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+
+        .products h3 {
+            font-size: 24px;
+            color: #63b457;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .product-list {
+            width: 735px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .product {
+            text-align: center;
+            width: 225px;
+            display: block;
+            color: #545454;
+            text-decoration: none;
+            float: left;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .product:hover {
+            color: #63b457;
+
+        }
+
+        .product-name {
+            font-size: 14px;
+            margin-top: 20px;
+            margin-bottom: 8px;
+
+        }
+
+        .product-price {
+            margin-bottom: 32px;
+            font-weight: 700;
+        }
+
+        .product img {
+            width: 225px;
+            height: 225px;
+            object-fit: cover;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 80px;
+            margin-bottom: 80px;
+            background-color: black;
+            height: 200px;
+        }
+
+        .footer a {
+            margin-left: 10px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="nav">
+        <a href="index.html">
+            <img src="logo.png"></a>
+        <ul>
+            <li><a href="main3.html">NEW</a></li>
+            <li><a href="#">SALE</a></li>
+            <li><a href="#">콜라보</a></li>
+            <li><a href="main4.html">캐릭터</a></li>
+            <li><a href="#">토이</a></li>
+            <li><a href="#">문구</a></li>
+            <li><a href="#">디지털</a></li>
+            <li><a href="#">패션잡화</a></li>
+        </ul>
+    </div>
+
+    <div class="header"></div>
+
+    <div class="products">
+        <h3>이번 달 신상품</h3>
+        <div class="product-list">
+            <a href="#" class="product">
+                <img src="https://shop-phinf.pstatic.net/20220609_190/1654743281256OAESV_JPEG/55879176227858388_331820481.jpg?type=m510"
+                    width="225">
+                <div class="product-name">라인프렌즈 미니니 레니니 스트레스볼</div>
+                <div class="product-price">13,000</div>
+            </a>
+
+            <a href="#" class="product">
+                <img src="https://shop-phinf.pstatic.net/20220609_184/1654743316768jSugP_JPEG/55879212255377635_559690108.jpg?type=m510"
+                    width="225">
+                <div class="product-name">라인프렌즈 미니니 초니니 스트레스볼</div>
+                <div class="product-price">13,000</div>
+            </a>
+
+            <a href="#" class="product">
+                <img src="https://shop-phinf.pstatic.net/20220609_66/16547433287359whcv_JPEG/55879224454234559_1813002202.jpg?type=m510"
+                    width="225">
+                <div class="product-name">라인프렌즈 미니니 샐리니 스트레스볼</div>
+                <div class="product-price">13,000</div>
+            </a>
+
+            <a href="#" class="product">
+                <img src="https://shop-phinf.pstatic.net/20220609_74/1654743346786VqtfU_JPEG/55879236163802164_2123790626.jpg?type=m510"
+                    width="225">
+                <div class="product-name">라인프렌즈 미니니 코니니 스트레스볼</div>
+                <div class="product-price">13,000</div>
+            </a>
+
+            <a href="#" class="product">
+                <img src="https://shop-phinf.pstatic.net/20220609_175/1654743359490loxF3_JPEG/55879255172566292_806021551.jpg?type=m510"
+                    width="225">
+                <div class="product-name">라인프렌즈 미니니 브니니 스트레스볼</div>
+                <div class="product-price">13,000</div>
+            </a>
+
+            <a href="#" class="product">
+                <img src="https://shop-phinf.pstatic.net/20220608_196/165467224519379Kpp_JPEG/9148_4059297.jpg?type=m510"
+                    width="225">
+                <div class="product-name">라인프렌즈 브라운앤프렌즈 투톤 사인펜</div>
+                <div class="product-price">7,000</div>
+            </a>
+
+            <a href="#" class="product">
+                <img src="https://shop-phinf.pstatic.net/20220608_277/1654668961208GC8Kg_JPEG/21424830_75213267.jpg?type=m510"
+                    width="225">
+                <div class="product-name">라인프렌즈 미니 브라운앤프렌즈 20색 색연필</div>
+                <div class="product-price">8,500</div>
+            </a>
+
+            <a href="#" class="product">
+                <img src="https://shop-phinf.pstatic.net/20220608_71/1654668876621R07ht_JPEG/21425110_75213546.jpg?type=m510"
+                    width="225">
+                <div class="product-name">라인프렌즈 미니니 옐로우 아크릴 클립 마그넷</div>
+                <div class="product-price">4,500</div>
+            </a>
+
+            <a href="#" class="product">
+                <img src="https://shop-phinf.pstatic.net/20220608_180/1654652060569CcbJA_JPEG/21423495_75195792.jpg?type=m510"
+                    width="225">
+                <div class="product-name">라인프렌즈 바이브라운 심볼 자수 블루 반팔 티셔츠</div>
+                <div class="product-price">35,000</div>
+            </a>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="https://www.naver.com/">
+            <img src="footer_logo.svg" height="20">
+        </a>
+        <a href="http://facebook.com">
+            <img src="https://bakey.codeit.kr/files/629/images/facebook.png" height="20">
+        </a>
+        <a href="http://instagram.com">
+            <img src="https://bakey.codeit.kr/files/629/images/instagram.png" height="20">
+        </a>
+        <a href="http://twitter.com">
+            <img src="https://bakey.codeit.kr/files/629/images/twitter.png" height="20">
+        </a>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
